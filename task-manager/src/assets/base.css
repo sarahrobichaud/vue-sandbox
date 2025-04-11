@@ -1,0 +1,157 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --custom-600: hsl(331 70.2% 46.1%);
+  --custom-700: hsl(331 70.2% 36.1%);
+  --custom-300: hsl(340 66.4% 76.7%);
+  --custom-200: hsl(340 66.4% 86.7%);
+
+  --custom-danger-700: hsl(360 70.2% 30.1%);
+  --custom-danger-600: hsl(360 70.2% 40.1%);
+  --custom-danger-300: hsl(360 66.4% 70.7%);
+  --custom-danger-200: hsl(360 66.4% 80.7%);
+
+
+  --black: hsl(none 0% 7%);
+  --black-soft: hsl(none 0% 10%);
+  --black-mute: hsl(none 0% 15%);
+  --black-border: hsl(none 0% 25%);
+
+  --white: hsl(none 0% 100%);
+  --white-soft: hsl(none 0% 95%);
+  --white-mute: hsl(none 0% 90%);
+  --white-border: hsl(none 0% 80%);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-danger: var(--custom-danger-700);
+  --color-danger-soft: var(--custom-danger-600);
+
+  --color-background: var(--white-soft);
+  --color-background-soft: var(--white);
+  --color-background-mute: var(--white-mute);
+  --color-border: var(--white-border);
+
+  --color-accent: var(--custom-700);
+  --color-accent-soft: var(--custom-600);
+
+  --color-heading: var(--black);
+  --color-text: var(--black-soft);
+  --color-muted: var(--black-mute);
+
+  --section-gap: 160px;
+}
+.dark {
+
+    --color-danger: var(--custom-danger-300);
+    --color-danger-soft: var(--custom-danger-200);
+
+    --color-background: var(--black-soft);
+    --color-background-soft: var(--black);
+    --color-background-mute: var(--black-mute);
+    --color-border: var(--black-border);
+
+    --color-accent: var(--custom-300);
+    --color-accent-soft: var(--custom-200);
+
+    --color-heading: var(--white);
+    --color-text: var(--white-soft);
+    --color-muted: var(--white-mute);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.3s,
+    background-color 0.1s;
+  line-height: 1.6;
+  font-family:
+  "Inter",
+    "ui-sans-serif",
+    "system-ui",
+    "sans-serif",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6 , span{
+  color: var(--color-heading);
+}
+
+.muted {
+  color: var(--color-text);
+}
+
+/* Typography */
+h1 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 , .brand-title {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.75rem; /* 28px */
+  margin-bottom: 1.25rem;
+}
+
+small {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--color-text);
+}
+
+.large {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.muted {
+  color: var(--color-text);
+  opacity: 0.6;
+}
